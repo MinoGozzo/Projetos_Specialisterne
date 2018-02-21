@@ -1,0 +1,17 @@
+input[type=text] {
+  width:40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text] {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+select {
+  width: 10%;
+  padding: 9px 13px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}

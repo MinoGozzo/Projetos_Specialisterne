@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <strong>Controle de Recados</strong>
+  <link rel="stylesheet" href="/recados/FormularioRecados.css" type="text/css">
+</head>
+
+<title>Controle de Recados</title><br><br>
+
+<body>
+  <form method="post">
+
+    Nome do contato:<br>
+    <input type="text" name="nomedocontato"><br>
+
+    Telefone e/ou email do contato:<br>
+    <input type="text" name="telefonedocontato"><br>
+
+    Recado para quem:<br>
+    <select name="Nome">
+      <option value="Marcelo">Marcelo</option>
+      <option value="Fernanda">Fernanda</option>
+      <option value="Glaucia">Glaucia</option>
+      <option value="Leandro">Leandro</option>
+      <option value="Marcela">Marcela</option>
+      <option value="Barbara">Barbara</option>
+      <option value="Rute">Rute</option>
+    </select><br><br>
+
+    Urgente:<br>
+    <input type="radio" name="assunto" value="sim" checked>Sim<br>
+    <input type="radio" name="assunto" value="nao">Não<br><br>
+
+    Assunto:<br>
+    <input type="radio" name="assunto" value="cliente" checked>Cliente<br>
+    <input type="radio" name="assunto" value="candidato">Candidato<br>
+    <input type="radio" name="assunto" value="empresa">Empresa<br>
+    <input type="radio" name="assunto" value="aluno">Aluno<br>
+    <input type="radio" name="assunto" value="other">Outro <textarea name="assunto" rows="1" cols="20">
+    </textarea><br><br>
+
+    <input type="submit">
+  </form>
+</body>
+</html>
