@@ -134,10 +134,10 @@ function enviar_email($tarefa, $anexos = array())//Declada a função enviar_ema
     $email->SMTPSecure = 'tls';//Tipo de segurança é 'tls' - Verificar ssl que alguns locais da internet dizem ser necessarias para e-mails google.
     $email->Host = "smtp.gmail.com";//Host do e-mail é stmp.gmail.com. Ajustar para outro host se necessário.
     $email->Port = 587;//Porta 587 - Verificar se porta 465 é a correta como dito em postagens atreladas com secure ssl
-    $email->Username = "minogozzo@gmail.com";//E-mail do qual será enviado o formulário.
-    $email->Password = "webloggolbew";//Senha de acesso ao e-mail.
-    $email->setFrom("minogozzo@gmail.com", "Avisador de Tarefas");//Define como remetente será mostrado.
-    $email->addAddress("minogozzo@gmail.com");//Define Destinatário
+    $email->Username = "";//E-mail do qual será enviado o formulário.
+    $email->Password = "";//Senha de acesso ao e-mail.
+    $email->setFrom("", "Avisador de Tarefas");//Define como remetente será mostrado.
+    $email->addAddress("");//Define Destinatário
     $email->Subject = "Aviso de tarefa: {$tarefa['nome']}";//Assunto do e-mail.
     $email->isHTML(true);//Afirmação de que e-mail será mandado como html.
     $email->Body = $corpo;//Insere a variavel $corpo no corpo do e-mail - Revisar com a forma do livro quando conectividade for estabelecida.
